@@ -1,5 +1,11 @@
-@use './fonts.scss';
+@use 'fonts.scss';
+
+@use 'mixins.scss';
+@use 'common.scss';
+
+// ***** SECTIONS *****
 
 .one {
-  font-family: Poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
 }
