@@ -1,0 +1,148 @@
+@use '../mixins.scss' as *;
+@use '../common.scss' as *;
+
+.first-section {
+  width: 100vw;
+  height: 100vh;
+  padding: 40px 0 0;
+
+  background: url(../../images/hero-bg__mob.jpg) center no-repeat;
+  background-size: cover;
+
+  position: relative;
+  overflow-x: hidden;
+}
+
+.top-nav {
+  @include flex(center, space-between);
+
+  &__company {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 1%;
+    text-align: left;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: $white;
+  }
+
+  &__pannel {
+    @include flex(center);
+  }
+
+  &__bag {
+    position: relative;
+    margin-right: 37px;
+
+    width: 25.5px;
+    height: 28.3px;
+  }
+
+  &__counter {
+    position: absolute;
+    top: 3px;
+    right: 2px;
+
+    font-size: 12px;
+    line-height: 1;
+
+    color: $white;
+    background-color: $orange;
+    border-radius: 50%;
+    outline: 5px solid $orange;
+  }
+}
+
+.burger-wrapper {
+  & input {
+    appearance: none;
+    width: 30px;
+    height: 22px;
+
+    position: absolute;
+    top: 42px;
+    right: 20px;
+  }
+
+  & input:checked ~ .burger .burger__line:first-child {
+    transform: translate(0, 10px) rotate(45deg);
+  }
+  & input:checked ~ .burger .burger__line:nth-child(2) {
+    transform: rotate(0deg) scale(0);
+  }
+  & input:checked ~ .burger .burger__line:last-child {
+    transform: translate(0, -10px) rotate(-45deg);
+  }
+  & input:checked ~ .mobile-nav {
+    // display: block;
+    opacity: 1;
+    pointer-events: initial;
+    appearance: initial;
+    z-index: 10;
+    right: 20px;
+  }
+}
+
+.burger {
+  width: 30px;
+  height: 22px;
+  @include flex(center, space-between, column);
+
+  &__line {
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+
+    background-color: $white;
+
+    transition: transform 0.3s ease-in;
+  }
+}
+
+.mobile-nav {
+  opacity: 0;
+  pointer-events: none;
+  appearance: none;
+  position: absolute;
+  right: -450px;
+  top: 86px;
+  z-index: -1;
+
+  width: 156px;
+  padding: 24px;
+
+  background-color: $white;
+
+  transition: all 0.3s ease-in-out;
+
+  &__item {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.6;
+
+    opacity: 0.8;
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    & a {
+      text-decoration: none;
+      color: $black;
+    }
+
+    &:hover .mobile-nav__sub-list {
+      display: block;
+    }
+  }
+
+  &__sub-list {
+    display: none;
+    margin-left: 5px;
+
+    & a {
+      font-size: 12px;
+    }
+  }
+}

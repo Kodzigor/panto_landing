@@ -1,0 +1,19 @@
+$black: #1e1e1e;
+$light-grey: #f7f7f7;
+$grey: #eeeeee;
+$orange: #e58411;
+$light-orange: #f6b76f;
+$white: #fff;
+$purple: #0d1b39;
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: $black;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  padding: 0 20px;
+}

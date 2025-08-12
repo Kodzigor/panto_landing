@@ -6,11 +6,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./src/scss/reset.scss">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./src/scss/style.scss">
 </head>
 
 <body>
-  <p class="one">Panto</p>
+  <section class="first-section">
+    <nav class="top-nav container">
+      <a href="" class="top-nav__company">Panto</a>
+
+      <div class="top-nav__pannel">
+        <figure class="top-nav__bag">
+          <svg id="bag" width="100%" height="100%" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.007 0.833252C16.8036 0.833252 19.9249 3.81662 20.0833 7.59688H20.0463C20.0508 7.70676 20.0296 7.81618 19.9846 7.91659H20.2058C21.9299 7.91659 23.7353 9.11156 24.4592 11.9963L24.5378 12.3367L25.6271 21.1125C26.411 26.7097 23.3487 29.0636 19.1713 29.1633L18.8912 29.1666H7.14708C2.90168 29.1666 -0.369729 27.6196 0.349565 21.4933L0.398615 21.1125L1.50041 12.3367C2.0437 9.2301 3.86761 8.00477 5.625 7.92121L5.81993 7.91659H5.93067C5.912 7.81083 5.912 7.70263 5.93067 7.59688C6.08911 3.81662 9.21041 0.833252 13.007 0.833252ZM8.88741 12.6331C8.19593 12.6331 7.63538 13.21 7.63538 13.9217C7.63538 14.6334 8.19593 15.2104 8.88741 15.2104C9.57889 15.2104 10.1394 14.6334 10.1394 13.9217L10.1297 13.7601C10.0524 13.1247 9.5257 12.6331 8.88741 12.6331ZM17.0882 12.6331C16.3968 12.6331 15.8362 13.21 15.8362 13.9217C15.8362 14.6334 16.3968 15.2104 17.0882 15.2104C17.7797 15.2104 18.3403 14.6334 18.3403 13.9217C18.3403 13.21 17.7797 12.6331 17.0882 12.6331ZM12.9515 2.6783C10.2257 2.6783 8.01594 4.88042 8.01594 7.59688C8.03462 7.70263 8.03462 7.81083 8.01594 7.91659H17.9487C17.9093 7.81451 17.8884 7.70625 17.887 7.59688C17.887 4.88042 15.6773 2.6783 12.9515 2.6783Z"
+              fill="white" />
+          </svg>
+          <span class="top-nav__counter">0</span>
+        </figure>
+        <label class="burger-wrapper">
+          <input type="checkbox">
+          <div class="burger">
+            <div class="burger__line"></div>
+            <div class="burger__line"></div>
+            <div class="burger__line"></div>
+          </div>
+          <menu class="mobile-nav">
+            <li class="mobile-nav__item">
+              <a href="#">Furniture</a>
+              <ul class="mobile-nav__sub-list">
+                <li class="mobile-nav__sub-item">
+                  <a href="#">Bed 1</a>
+                </li>
+                <li class="mobile-nav__sub-item">
+                  <a href="#">Bed 2</a>
+                </li>
+                <li class="mobile-nav__sub-item">
+                  <a href="#">Bed 3</a>
+                </li>
+              </ul>
+
+            </li>
+            <li class="mobile-nav__item"><a href="#">Shop</a></li>
+            <li class="mobile-nav__item"><a href="#">About Us</a></li>
+            <li class="mobile-nav__item"><a href="#">Contact</a></li>
+          </menu>
+        </label>
+      </div>
+    </nav>
+
+    <section class="hero container">
+      <h1 class="hero__title">Make your interior more
+        minimalistic & modern</h1>
+      <p class="hero__subtitle">Turn your room with panto into a lot more minimalist and modern with ease and speed</p>
+
+      <div class="searchbar">
+        <input class="serchbar__field" type="search" name="" id="">
+        <figure class="serchbar__img">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="40" height="40" rx="20" fill="#E58411" />
+            <path
+              d="M26.75 26.75L23.3855 23.3795M25.25 18.875C25.25 20.5658 24.5784 22.1873 23.3828 23.3828C22.1873 24.5784 20.5658 25.25 18.875 25.25C17.1842 25.25 15.5627 24.5784 14.3672 23.3828C13.1716 22.1873 12.5 20.5658 12.5 18.875C12.5 17.1842 13.1716 15.5627 14.3672 14.3672C15.5627 13.1716 17.1842 12.5 18.875 12.5C20.5658 12.5 22.1873 13.1716 23.3828 14.3672C24.5784 15.5627 25.25 17.1842 25.25 18.875Z"
+              stroke="white" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </figure>
+      </div>
+    </section>
+  </section>
 
 </body>
 
