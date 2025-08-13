@@ -71,6 +71,64 @@
   }
 }
 
+.desktop-nav {
+  position: relative;
+
+  @include media(lg) {
+    @include flex(center);
+  }
+
+  &__item {
+    &:not(:last-of-type) {
+      margin-right: 58px;
+    }
+
+    &:hover .desktop-nav__sublist {
+      appearance: initial;
+      opacity: 1;
+      pointer-events: initial;
+      top: 22px;
+    }
+  }
+
+  &__link {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    color: $white;
+  }
+
+  &__sublist {
+    position: absolute;
+    top: -500px;
+
+    appearance: none;
+    opacity: 0;
+    pointer-events: none;
+
+    width: 99px;
+    padding: 12px;
+    @include flex(stretch, stretch, column);
+    background-color: $white;
+    transition: opacity 1s ease-in, top 0.3s ease-in;
+  }
+
+  &__subitem {
+    &:not(:last-of-type) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__sublink {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.6;
+    color: $black;
+  }
+}
+
 .burger-wrapper {
   & input {
     appearance: none;
@@ -130,7 +188,7 @@
 
   background-color: $white;
 
-  transition: all 0.3s ease-in-out;
+  transition: right 0.3s ease-in-out, opacity 0.6s ease-in-out;
 
   @include media(md) {
     top: 86px;
