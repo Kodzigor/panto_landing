@@ -5,6 +5,10 @@
   padding-top: 14vh;
   text-align: center;
 
+  @include media(md) {
+    padding-top: 7.3vh;
+  }
+
   &__title {
     font-weight: 600;
     font-size: 28px;
@@ -12,6 +16,15 @@
     letter-spacing: -0.01em;
     text-transform: capitalize;
     color: $white;
+
+    @include media(md) {
+      font-size: 48px;
+    }
+    @include media(lg) {
+      font-size: 80px;
+      max-width: 948px;
+      margin: 0 auto;
+    }
   }
 
   &__subtitle {
@@ -21,12 +34,26 @@
     color: $white;
     opacity: 0.6;
 
-    margin: 29px 0;
+    margin: 35px 0;
+
+    @include media(md) {
+      font-size: 20px;
+      max-width: 606px;
+      margin: 14px auto 45px;
+    }
+    @include media(lg) {
+      font-size: 24px;
+    }
   }
 }
 
 .searchbar {
   position: relative;
+
+  @include media(md) {
+    width: 344px;
+    margin: 0 auto;
+  }
   & input {
     width: 100%;
     height: 56px;
