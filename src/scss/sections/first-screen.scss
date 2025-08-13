@@ -4,7 +4,7 @@
 .first-section {
   width: 100vw;
   height: 100vh;
-  padding: 40px 0 0;
+  // padding: 40px 0 0;
 
   background: url(../../images/hero-bg__mob.jpg) center no-repeat;
   background-size: cover;
@@ -15,6 +15,14 @@
 
 .top-nav {
   @include flex(center, space-between);
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @include media(md) {
+    padding-top: 47px;
+    padding-bottom: 47px;
+  }
 
   &__company {
     font-size: 28px;
@@ -37,6 +45,10 @@
 
     width: 25.5px;
     height: 28.3px;
+
+    @include media(lg) {
+      margin-right: 0;
+    }
   }
 
   &__counter {
