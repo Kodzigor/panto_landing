@@ -1,2 +1,54 @@
 @use '../mixins.scss' as *;
 @use '../common.scss' as *;
+
+.benefits {
+  @include media(md) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+  &__wrapper {
+    padding-bottom: 80px;
+    padding-top: 80px;
+    @include media(lg) {
+      padding-bottom: 120px;
+      padding-top: 120px;
+
+      display: grid;
+      grid-template-columns: 344px 1fr;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    margin-bottom: 60px;
+    @include media(lg) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item {
+    padding-right: 45px;
+    &:not(:last-of-type) {
+      margin-bottom: 28px;
+    }
+
+    @include media(md) {
+      padding-right: 0px;
+
+      &:not(:last-of-type) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__text {
+    line-height: 1.8;
+    margin: 18px 0;
+    @include media(lg) {
+      height: 90px;
+      overflow-y: hidden;
+      margin: 14px 0;
+    }
+  }
+}
