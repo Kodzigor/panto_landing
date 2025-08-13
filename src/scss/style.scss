@@ -1,7 +1,9 @@
 @use './mixins.scss' as *;
 @use './common.scss' as *;
+@use './typography.scss';
 
 // ***** SECTIONS *****
 
 @use './sections/first-screen.scss';
 @use './sections/hero.scss';
+@use './sections/benefits.scss';
