@@ -5,8 +5,11 @@
   padding-top: 80px;
   @include media(xl) {
     @include flex;
-    flex-direction: row-reverse;
     padding-top: 312px;
+  }
+
+  &--reversed {
+    flex-direction: row-reverse;
   }
 
   &__right {
@@ -47,7 +50,7 @@
   }
 }
 
-.preview-container {
+.experience-container {
   max-width: 1440px;
   width: 100%;
   padding: 0 21px;
