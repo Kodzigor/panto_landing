@@ -1,0 +1,60 @@
+@use '../mixins.scss' as *;
+@use '../common.scss' as *;
+
+.text-block {
+  padding-top: 80px;
+  @include media(xl) {
+    @include flex;
+    flex-direction: row-reverse;
+    padding-top: 312px;
+  }
+
+  &__right {
+    margin-bottom: 32px;
+
+    @include media(xl) {
+      width: 556px;
+      padding-right: 13px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    @include media(lg) {
+      width: 413px;
+    }
+  }
+
+  &__text {
+    margin: 22px 0;
+  }
+
+  &__left {
+    display: flex;
+    justify-content: center;
+
+    picture img {
+      border-radius: 20px;
+    }
+
+    @include media(xl) {
+      margin-right: 141px;
+
+      picture img {
+        border-radius: 0 20px 20px 0;
+      }
+    }
+  }
+}
+
+.preview-container {
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 21px;
+  margin: 0 auto;
+
+  @include media(xl) {
+    @include flex(center, start);
+    padding: 0;
+  }
+}
