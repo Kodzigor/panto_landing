@@ -39,9 +39,10 @@
     @include media(xl) {
       display: grid;
       grid-template-columns: 1fr 2fr;
-      grid-template-rows: 229px 317px;
+      grid-template-rows: auto;
       align-items: end;
 
+      width: 50%;
       margin-right: 0;
       margin-left: 80px;
 

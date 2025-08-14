@@ -7,8 +7,8 @@
   }
 
   &__container {
-    max-width: 1440px;
-    width: 100%;
+    // max-width: 1440px;
+    // width: 100%;
     padding: 80px 21px 0;
     margin: 0 auto;
 
@@ -26,7 +26,7 @@
     margin-bottom: 32px;
 
     @include media(xl) {
-      width: 556px;
+      width: 38.6%;
       padding-right: 13px;
       margin-bottom: 0;
     }
@@ -51,9 +51,15 @@
     }
 
     @include media(xl) {
+      width: 42.2%;
       margin-right: 141px;
 
+      picture {
+        width: 100%;
+      }
+
       picture img {
+        width: 100%;
         border-radius: 0 20px 20px 0;
       }
     }
