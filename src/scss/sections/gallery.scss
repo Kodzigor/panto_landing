@@ -7,12 +7,22 @@
 
   background-color: $light-grey;
 
+  @include media(md) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   &-nav {
     padding: 6px;
     margin-top: 8px;
 
     background-color: $grey;
     border-radius: 44px;
+
+    @include media(sm) {
+      width: 348px;
+      margin: 0 auto;
+    }
 
     &__item {
       border: none;
@@ -36,6 +46,28 @@
   }
 
   &-content {
+    & > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include media(md) {
+        @include flex(center, space-around, row);
+        gap: 42px;
+        flex-wrap: wrap;
+      }
+
+      @include media(lg) {
+        display: grid;
+        grid-template-columns: repeat(3, 268px);
+      }
+
+      @include media(xl) {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
     &__item {
       width: 335px;
       height: 442px;
@@ -48,6 +80,11 @@
 
       &:first-of-type {
         margin-top: 110px;
+      }
+
+      @include media(md) {
+        width: 268px;
+        margin-top: 130px;
       }
 
       &-img {
@@ -139,5 +176,12 @@
         height: 19px;
       }
     }
+  }
+
+  &-arrow {
+    display: block;
+    text-align: center;
+
+    margin-top: 60px;
   }
 }
