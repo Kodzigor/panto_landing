@@ -1,0 +1,143 @@
+@use '../mixins.scss' as *;
+@use '../common.scss' as *;
+
+.gallery {
+  padding-top: 60px;
+  padding-bottom: 36px;
+
+  background-color: $light-grey;
+
+  &-nav {
+    padding: 6px;
+    margin-top: 8px;
+
+    background-color: $grey;
+    border-radius: 44px;
+
+    &__item {
+      border: none;
+      background-color: transparent;
+      border-radius: 32px;
+      padding: 7px 14.5px;
+
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 33px;
+
+      opacity: 0.8;
+
+      &--active {
+        padding-left: 16.5px;
+        padding-right: 16.5px;
+        font-weight: 500;
+        background-color: $white;
+      }
+    }
+  }
+
+  &-content {
+    &__item {
+      width: 335px;
+      height: 442px;
+      overflow-y: visible;
+      margin-top: 78px;
+
+      @include flex(initial, initial, column);
+
+      border-radius: 20px;
+
+      &:first-of-type {
+        margin-top: 110px;
+      }
+
+      &-img {
+        width: 100%;
+        height: 240px;
+        @include flex(center, flex-end, column);
+
+        background-color: $alt-grey;
+        background-image: url(../../images/chair-bg-image.png);
+        background-position: 83px 83px;
+        background-repeat: no-repeat;
+        border-radius: 20px 20px 0 0;
+
+        & img {
+          width: 218px;
+          height: 256px;
+          margin-bottom: 50px;
+        }
+      }
+    }
+
+    &__info {
+      height: 202px;
+      padding: 13px 22px 27px;
+
+      background-color: $white;
+      border-radius: 0 0 20px 20px;
+    }
+
+    &__category {
+      margin-bottom: 6px;
+
+      font-weight: 400;
+      font-size: 16.7px;
+      color: $dark-grey;
+    }
+
+    &__title {
+      margin-bottom: 7px;
+
+      font-weight: 600;
+      font-size: 21.3px;
+      text-transform: capitalize;
+      color: $purple;
+    }
+
+    &__rating {
+      @include flex(center);
+      gap: 3px;
+
+      margin-bottom: 37px;
+    }
+
+    &__star {
+      width: 19px;
+      height: 19px;
+    }
+
+    &__footer {
+      @include flex(center, space-between);
+    }
+
+    &__price {
+      @include flex(flex-start);
+
+      font-weight: 600;
+      font-size: 21.3px;
+      color: $purple;
+
+      & span {
+        font-size: 15.23px;
+
+        margin-right: 3px;
+      }
+    }
+
+    &__button {
+      width: 49px;
+      height: 49px;
+
+      @include flex(center, center);
+
+      border: none;
+      border-radius: 31px;
+      background-color: $purple;
+
+      & svg {
+        width: 19px;
+        height: 19px;
+      }
+    }
+  }
+}

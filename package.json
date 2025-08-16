@@ -12,6 +12,7 @@
   "devDependencies": {
     "@parcel/transformer-sass": "^2.15.4",
     "parcel": "^2.15.4",
+    "prettier": "^3.6.2",
     "vite": "^7.1.1"
   }
 }
