@@ -42,6 +42,10 @@
     color: $orange;
 
     margin-bottom: 23px;
+
+    &--centered {
+      text-align: center;
+    }
   }
 }
 .arrow {
