@@ -12,6 +12,13 @@
     padding-bottom: 50px;
   }
 
+  & .container {
+    @include media(lg) {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+
   &-nav {
     padding: 6px;
     margin-top: 8px;
