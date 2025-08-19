@@ -7,6 +7,10 @@
     padding-top: 80px;
     padding-bottom: 162px;
 
+    & .section__title {
+      line-height: 47px;
+    }
+
     @include media(lg) {
       padding: 262px 47px 245px;
     }
@@ -14,7 +18,7 @@
 
   &-list {
     position: relative;
-    margin-top: 49px;
+    margin-top: 47px;
 
     display: grid;
     grid-auto-flow: column;
@@ -27,6 +31,7 @@
 
     @include media(md) {
       grid-auto-columns: calc((100% - 38px) / 2);
+      margin-top: 58px;
     }
 
     @include media(xl) {
@@ -39,7 +44,7 @@
     background-size: cover;
 
     width: 336px;
-    padding: 229px 16px 16px;
+    padding: 212px 16px 18px;
     border-radius: 18px;
 
     @include media(lg) {
@@ -81,7 +86,7 @@
       background-position: top left;
 
       @include media(md) {
-        height: 239px;
+        height: 242px;
       }
     }
 
