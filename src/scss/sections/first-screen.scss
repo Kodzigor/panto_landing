@@ -8,16 +8,12 @@
   position: relative;
   overflow-x: hidden;
 
-  background:
-    linear-gradient(to top, $white 0%, transparent 20vh),
-    url(../../images/hero-bg__mob.jpg) center no-repeat;
   background-size: cover;
+  background-position: top right;
+  background-repeat: no-repeat;
 
   @include media(md) {
-    background:
-      linear-gradient(to top, $white 0%, transparent 20vh),
-      url(../../images/hero-bg.jpg) center no-repeat;
-    background-size: cover;
+    background-position: top center;
   }
 }
 
