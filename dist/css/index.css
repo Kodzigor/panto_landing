@@ -1079,7 +1079,7 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 42px;
-  column-gap: 45px;
+  column-gap: 38px;
 }
 @media (min-width: 576px) {
   .bottom-bar__container {
