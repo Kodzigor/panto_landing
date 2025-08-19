@@ -20,7 +20,7 @@ modern adaptive layout and interactive elements.
 
 ## 🔗 Live Demo
 
-👉 [View on Vercel](https://it-agency-inky.vercel.app/)
+👉 [View on Vercel](https://panto-landing-ruby.vercel.app/)
 
 ## 📁 Project Structure
 
