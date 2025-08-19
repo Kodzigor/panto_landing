@@ -6,11 +6,13 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
-dist/**/*
+
 .parcel-cache/**/*
 node_modules/**/*
 *.scss
 src/scss/**/*/
+src/**/*/
+/src/
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
