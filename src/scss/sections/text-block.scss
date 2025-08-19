@@ -7,8 +7,6 @@
   }
 
   &__container {
-    // max-width: 1440px;
-    // width: 100%;
     padding: 80px 21px 0;
     margin: 0 auto;
 
@@ -26,8 +24,9 @@
     margin-bottom: 32px;
 
     @include media(xl) {
-      width: 38.6%;
-      padding-right: 13px;
+      width: 39.6%;
+      height: -webkit-fill-available;
+      padding-right: 18px;
       margin-bottom: 0;
     }
   }
@@ -39,7 +38,7 @@
   }
 
   &__text {
-    margin: 22px 0;
+    margin: 25px 0;
   }
 
   &__left {

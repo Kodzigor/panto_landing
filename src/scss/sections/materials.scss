@@ -18,8 +18,7 @@
 
   &__content {
     @include media(xl) {
-      padding-right: 0;
-      padding-left: 13px;
+      padding: 119px 0 13px 0;
     }
   }
   &__images {
@@ -42,7 +41,7 @@
       grid-template-rows: auto;
       align-items: end;
 
-      width: 50%;
+      width: 49%;
       margin-right: 0;
       margin-left: 80px;
 
