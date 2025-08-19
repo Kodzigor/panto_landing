@@ -7,8 +7,7 @@
   padding-bottom: 13px;
 
   @include media(lg) {
-    padding-top: 118px;
-    padding-bottom: 55px;
+    padding: 123px 188px 55px;
   }
 
   &__container {
@@ -23,7 +22,7 @@
 
     @include media(lg) {
       grid-template-columns: 2fr repeat(3, 1fr);
-      column-gap: 120px;
+      column-gap: 90px;
     }
   }
 
